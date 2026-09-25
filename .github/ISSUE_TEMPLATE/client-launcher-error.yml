@@ -1,0 +1,131 @@
+name: Client / launcher error
+description: Report a reproducible TCLS, APClient, launcher, TGame startup, or early connection problem.
+title: "[Client/Launcher] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping document Assault Fire PH client compatibility.
+
+        Please keep reports focused on the retired PH client and this local emulator. Do not upload PRIVATE.PEM, passwords, access tokens, proprietary game binaries/DLLs, full memory dumps, or personal account data.
+
+        Before filing, check:
+        - docs/LAUNCHER_ERRORS.md
+        - docs/GETTING_STARTED.md
+        - docs/LAUNCH_REQUIREMENTS.md
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Last stage reached
+      description: Choose the last stage that definitely worked.
+      options:
+        - No VERSION connection
+        - VERSION only
+        - AUTH connected
+        - AUTH completed / AP cmd 5 seen
+        - DIR / server list
+        - ROLE / TACC
+        - TCLS -> TGame handoff
+        - TGame ROLE
+        - TGame ZONE
+        - Gameplay / post-login
+        - Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: popup
+    attributes:
+      label: Exact popup or log text
+      description: Copy the exact message if possible.
+      placeholder: "AP client initialization failed."
+    validations:
+      required: true
+
+  - type: input
+    id: client_version
+    attributes:
+      label: Client version / build
+      placeholder: "Assault Fire PH v1.0.0.24"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Tell us exactly what you launched/clicked and when the error appeared.
+      placeholder: |
+        1. Started server/assaultfire_server_v143b.py
+        2. Started client.exe / TCLS
+        3. Entered credentials and clicked Login
+        4. Popup appeared after VERSION response
+    validations:
+      required: true
+
+  - type: textarea
+    id: server_log
+    attributes:
+      label: Sanitized emulator log around the failure
+      description: Include enough lines to show the last successful stage. Remove credentials, private data, and secrets.
+      render: text
+      placeholder: |
+        [VERSION] Connected ...
+        [VERSION] RX ...
+        [VERSION] TX ...
+        # no [AUTH] Connected ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: apclient
+    attributes:
+      label: APClient.dat check
+      description: For AP/AUTH problems, tell us what you verified.
+      options:
+        - Not relevant / not checked
+        - Present but not verified
+        - Repository-generated 272-byte PEM public key
+        - Different/original APClient.dat
+        - Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: hashes
+    attributes:
+      label: TGame/TCLS hashes (optional)
+      description: SHA-256 only. Do not upload the binaries themselves.
+      placeholder: "TCLS SHA-256: ... / TGame SHA-256: ..."
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        Windows version/build:
+        Python version:
+        Server commit:
+        Existing TGame/client.exe instances:
+        Debugger attached: Yes/No
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else that changed the result?
+      description: Examples: restarting both processes, changing APClient.dat, switching client copy, datetime helper, or different launch path.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Report checklist
+      options:
+        - label: I removed PRIVATE.PEM, passwords, tokens, personal account data, and other secrets.
+          required: true
+        - label: I did not attach original game executables, DLLs, maps, packages, or other proprietary game assets.
+          required: true
+        - label: I checked the existing launcher-error documentation before filing this report.
+          required: true

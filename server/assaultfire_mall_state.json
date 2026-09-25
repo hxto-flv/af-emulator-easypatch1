@@ -1,0 +1,321 @@
+{
+  "current_bag_gid": 42953967927298,
+  "current_role_gid": 42953967927297,
+  "inventory": [
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927297,
+      "item_id": 100600,
+      "location": 10,
+      "owner_gid": 1,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927298,
+      "item_id": 100026,
+      "location": 12,
+      "owner_gid": 1,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927299,
+      "item_id": 100063,
+      "location": 12,
+      "owner_gid": 0,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927300,
+      "item_id": 100497,
+      "location": 0,
+      "owner_gid": 42953967927298,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927301,
+      "item_id": 100009,
+      "location": 12,
+      "owner_gid": 0,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927302,
+      "item_id": 100058,
+      "location": 12,
+      "owner_gid": 0,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927303,
+      "item_id": 100010,
+      "location": 3,
+      "owner_gid": 42953967927298,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927304,
+      "item_id": 300121,
+      "location": 255,
+      "owner_gid": 42953967927297,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927305,
+      "item_id": 300122,
+      "location": 255,
+      "owner_gid": 42953967927297,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927306,
+      "item_id": 100602,
+      "location": 0,
+      "owner_gid": 42953967927297,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927307,
+      "item_id": 100293,
+      "location": 0,
+      "owner_gid": 42953967927299,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927308,
+      "item_id": 100005,
+      "location": 1,
+      "owner_gid": 42953967927299,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927309,
+      "item_id": 100239,
+      "location": 2,
+      "owner_gid": 42953967927298,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927310,
+      "item_id": 100062,
+      "location": 12,
+      "owner_gid": 0,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927311,
+      "item_id": 300027,
+      "location": 255,
+      "owner_gid": 42953967927310,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927312,
+      "item_id": 300028,
+      "location": 255,
+      "owner_gid": 42953967927310,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927313,
+      "item_id": 100014,
+      "location": 12,
+      "owner_gid": 0,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927314,
+      "item_id": 300002,
+      "location": 255,
+      "owner_gid": 42953967927313,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927315,
+      "item_id": 300003,
+      "location": 255,
+      "owner_gid": 42953967927313,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927316,
+      "item_id": 100069,
+      "location": 11,
+      "owner_gid": 1,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927317,
+      "item_id": 300032,
+      "location": 255,
+      "owner_gid": 42953967927316,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927318,
+      "item_id": 300033,
+      "location": 255,
+      "owner_gid": 42953967927316,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927319,
+      "item_id": 100322,
+      "location": 0,
+      "owner_gid": 42953967927316,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927320,
+      "item_id": 100123,
+      "location": 12,
+      "owner_gid": 0,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927321,
+      "item_id": 300042,
+      "location": 255,
+      "owner_gid": 42953967927320,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927322,
+      "item_id": 300043,
+      "location": 255,
+      "owner_gid": 42953967927320,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 0,
+      "durability_max": 0,
+      "gain_type": 1,
+      "gid": 42953967927323,
+      "item_id": 100131,
+      "location": 0,
+      "owner_gid": 42953967927320,
+      "validity": 87600
+    },
+    {
+      "avail_hours": 87600,
+      "durability": 100,
+      "durability_max": 100,
+      "gain_type": 1,
+      "gid": 42953967927324,
+      "item_id": 100295,
+      "location": 1,
+      "owner_gid": 42953967927298,
+      "validity": 87600
+    }
+  ],
+  "next_gid": 42953967927325,
+  "version": 1,
+  "wallet": {
+    "ap": 99999999,
+    "gp": 99999999,
+    "mp": 99998999
+  }
+}

@@ -1,0 +1,66 @@
+# Secrets / credentials
+*.pem
+*.PEM
+PRIVATE.PEM
+*.key
+*.KEY
+*.pfx
+*.p12
+.env
+.env.*
+secrets/
+private/
+
+# Local player/account/runtime state
+*player_state*.json
+*account_state*.json
+*profile_state*.json
+*clan_state*.json
+assaultfire_player_state.json
+assaultfire_clan_state.json
+*.sqlite
+*.db
+
+# Local/generated mappings
+generated/
+shop_item_map.json
+
+# Logs / captures / dumps
+*.log
+*.dmp
+*.dump
+*.pcap
+*.pcapng
+logs/
+captures/
+dumps/
+
+# Proprietary game/client files
+*.exe
+*.dll
+*.sys
+*.upk
+*.udk
+*.u
+*.tfc
+*.pak
+*.tpf
+
+# Archives and generated binaries
+*.zip
+*.7z
+*.rar
+*.bin
+*.dat
+build/
+dist/
+__pycache__/
+*.py[cod]
+
+# IDE / OS
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db

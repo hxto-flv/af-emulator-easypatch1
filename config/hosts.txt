@@ -1,0 +1,19 @@
+# Assault Fire PH local emulator host mappings
+#
+# Copy ONLY the active mapping lines below into:
+#   C:\Windows\System32\drivers\etc\hosts
+#
+# Run your editor as Administrator.
+# Remove/comment these lines to restore normal DNS resolution.
+#
+# Service mapping:
+#   tversion.levelupgames.ph   -> VERSION service (port 9060)
+#   tauthproxy.levelupgames.ph -> AUTH service    (port 8000)
+#   tdir.levelupgames.ph       -> DIR/ROLE path   (ports 9010 / 65005)
+#
+# These mappings redirect the retired Assault Fire PH service hostnames
+# to the emulator running on the same PC.
+
+127.0.0.1    tversion.levelupgames.ph
+127.0.0.1    tauthproxy.levelupgames.ph
+127.0.0.1    tdir.levelupgames.ph
