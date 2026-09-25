@@ -76,15 +76,39 @@ class SpawnerConfig:
             raw = os.environ.get("AF_GAME_DIR")
             if raw and os.path.isdir(raw):
                 return raw
-            candidates = [
-                r"C:\Users\Administrator\Desktop\af\Assault Fire 1.0.0.24\Binaries\Win32",
-                r"D:\AssaultFirePH\Binaries\Win32",
-                r".\game\Binaries\Win32",
-            ]
+
+            # Build a list of candidate directories to search automatically.
+            # Covers common install locations across drives and user profiles.
+            candidates: list[str] = []
+
+            # 1. Desktop/<username>/af/... layout (works for any user)
+            user_profile = os.environ.get("USERPROFILE", "")
+            if user_profile:
+                candidates.append(
+                    os.path.join(user_profile, "Desktop", "af",
+                                 "Assault Fire 1.0.0.24", "Binaries", "Win32")
+                )
+
+            # 2. Common installation paths on multiple drives
+            for drive in ("C", "D", "E", "F", "G"):
+                candidates += [
+                    rf"{drive}:\Program Files\Assault Fire PH\Binaries\Win32",
+                    rf"{drive}:\Program Files (x86)\Assault Fire PH\Binaries\Win32",
+                    rf"{drive}:\AssaultFirePH\Binaries\Win32",
+                    rf"{drive}:\Games\Assault Fire PH\Binaries\Win32",
+                    rf"{drive}:\Games\AssaultFirePH\Binaries\Win32",
+                ]
+
+            # 3. Relative fallback (repo bundled game)
+            candidates.append(r".\game\Binaries\Win32")
+
             for c in candidates:
                 if os.path.isdir(c):
                     return c
+
+            # Last resort: return what was set (even if invalid) or the old default
             return raw or r"D:\AssaultFirePH\Binaries\Win32"
+
 
         return cls(
             enabled=env_bool("AF_DS_SPAWNER_ENABLED", True),

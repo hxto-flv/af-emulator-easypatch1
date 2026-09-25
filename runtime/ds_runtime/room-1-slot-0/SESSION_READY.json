@@ -1,7 +1,7 @@
 {
   "advanced_hero": false,
   "game": "PVEGame.TGSVGame",
-  "gworld": 192153856,
+  "gworld": 199297280,
   "instance_id": "room-1-slot-0",
   "loadmap_stage": 7,
   "map": "SV-Maya_3_Main",
@@ -9,15 +9,15 @@
   "max_players": 4,
   "mode_id": 8193,
   "native_movement": true,
-  "pid": 10140,
+  "pid": 22536,
   "port": 7777,
   "pve_difficulty": 0,
   "pve_difficulty_name": "Easy",
   "ready": true,
   "room_flags": 12296,
   "sub_mode_id": 4097,
-  "timestamp": 1790335088.3747377,
+  "timestamp": 1790339268.34505,
   "zero_dskey": true,
   "zero_dskey_rekeys": 1,
-  "zero_dskey_socket": 203090688
+  "zero_dskey_socket": 210234752
 }
